@@ -13,28 +13,29 @@ public class Exercise {
 
         public static int[] createAndInitializeArray(int size) {
             int[] array = new int[size];
-
             for (int i = 0; i < size; i++) {
-                int num;
-                do {
-                    num = Utils.integer("Introduce un número natural para la posición " + i + ": ");
-                } while (num < 0);
+                array [i] = i + 1;
 
-                array[i] = num;
+
+
+
+
             }
 
             return array;
         }
 
         public static void showInlineArray(int[] array) {
-            System.out.print("Contenido del array: ");
-            for (int num : array) {
-                System.out.print(num + " ");
+            for (int i = 0; i < array.length; i++) {
+                System.out.print(array[i]);
+                if (i < array.length - 1) {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
 
+        }
 
 
-    }
 
